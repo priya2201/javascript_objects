@@ -1,0 +1,21 @@
+//ecmascript 5(ESS 2009) introduced Getters and Setters
+const p={
+    fname:'vini',
+    lname:'duseja',
+    language:'en',
+    // get lang(){
+    //     return this.language;
+    // }
+    get name(){
+        return this.fname + " " + this.lname
+    },
+    marks:"",
+    set mark(mark){
+this.marks=mark;
+    }
+};
+p.mark=95;
+
+console.log(p.lang);
+console.log(p.name);
+console.log(p.marks);

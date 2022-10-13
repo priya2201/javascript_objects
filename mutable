@@ -1,0 +1,21 @@
+let obj={
+    name:"pia",
+    age:20,
+    isactive:true
+}
+let b=obj;
+console.log(obj,b);
+b.age=38;
+
+console.log(obj,b);
+ //objects are mutable
+ //but arrays if we copy so,by spread operator(by value) you can only modify that array
+ let arr1=[11,22,33,44,55];
+ let arr2=arr1;
+console.log(arr1,arr2);
+
+arr2=[...arr1];
+arr2.push(2);
+arr1.push(23);
+console.log(arr1,arr2);
+

@@ -1,0 +1,36 @@
+//accessing properties by . or [] and by expression
+const person={
+    name:'tushi',
+    age:20,
+    isactive:true,
+    eyecolor:'brown',
+    cars:{
+        car1:'bmw',
+        car2:'lambhorghini',
+        car3:'audi'
+    }
+};
+x='hairs'; //expression
+person[x]='black';
+console.log(person[x]);
+console.log(person.name + " is having " + person.eyecolor +" eyecolor");
+console.log(person['name'] + " is having  " + person['eyecolor'] +" eyecolor");
+console.log(person['name'] + " is having  " + person['eyecolor'] +" eyecolor" + person.age + " years old");
+
+//for ..in loop
+let txt='';
+for(let x in person){
+    txt+=person[x] + " ";
+
+}
+console.log(txt);
+person.nationality="Indian";
+console.log(txt);
+console.log(person.nationality);
+delete person.age;
+console.log(person['name'] + " is having  " + person['eyecolor'] +" eyecolor" + person.age + " years old");
+console.log(person.cars.car2);
+console.log(person['cars']['car2']);
+let p1='cars';
+let p2='car3';
+console.log(person[p1][p2]);

@@ -1,0 +1,13 @@
+//js method is a property that containing a function definition
+let p={
+    name:'pia',
+    lastname:'murpani',
+    age:21
+}
+    p.fullname= function(){
+        return (this.name+ " " + this.lastname).toUpperCase();
+   
+
+}
+console.log(p.fullname());
+console.log(p.fullname);

@@ -1,0 +1,41 @@
+//blueprint for creating many objects of the same type
+ //objects of the same type are created by calling the constructor function with new keyword
+ function person(fname,lname,age,color){
+    this.firstname=fname;
+    this.lastname=lname;
+    this.age=age;
+    this.color=color;
+    this.changeName = function (name) {
+        this.lastName = name;
+      };
+    
+    
+}
+
+const father=new person("John","doe",30,"pink");
+const mother=new person("sally","jain",22,"yellow");
+// mother.name=function(){
+//     return this.firstname + " " + this.lastname 
+// };
+// console.log(mother.name);
+mother.changeName('sally');
+console.log(mother.lastName);
+console.log(father);
+console.log(mother);
+console.log(father.age);
+console.log(mother.lastname);
+
+father.name=function(){
+    return this.age+this.color
+}
+console.log(father.name())
+person.nationality="English";
+console.log(person.nationality);
+father.nationality="English";
+console.log(father.nationality);
+   
+father.isactive=true;
+console.log(father.isactive);
+
+
+

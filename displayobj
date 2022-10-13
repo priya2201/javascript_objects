@@ -1,0 +1,26 @@
+const p={
+    name:'pia',
+    age:21,
+    today: new Date(),
+    color:function(){
+        return 30;   
+    
+    }
+};
+p.color=p.color.toString();
+
+console.log(p)
+const myArray=Object.values(p);
+console.log(myArray);
+const myArray1=Object.keys(p);
+console.log(myArray1);
+//any js object can be stringified converting to a string with th js fn JSON.stringify()
+let myString=JSON.stringify(p);
+console.log(myString);
+//JSON stringify will not stringify functions
+let arr1=['pia','tushi','moni','niki'];
+let str=JSON.stringify(arr1);
+console.log(str);
+
+
+

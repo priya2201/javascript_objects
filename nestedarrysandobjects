@@ -1,0 +1,18 @@
+//values in objects can be arrays,and values in array can be objects
+const obj={
+    name:'pia',
+    age:'21',
+    cars:[
+        {name:"bmw",models:["focus","mustang"]},
+        {name:"maruti",models:["200","panda"]}
+    ]
+} 
+//to access arrays inside arrays use a for-in oop
+let x ='';
+for(let i in obj.cars){
+    x+= obj.cars[i].name + " " ;
+    for(let j in obj.cars[i].models){
+        x+=obj.cars[i].models[j] + " ";
+    }
+}
+console.log(x);

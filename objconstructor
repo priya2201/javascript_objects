@@ -1,0 +1,9 @@
+function person(fname,lname,age,color){
+    this.firstname=fname;
+    this.lastname=lname;
+    this.age=age;
+    this.color=color;
+}
+const myfather=new person("John","Doe",50,"blue");
+console.log(myfather);
+console.log(myfather.age);
