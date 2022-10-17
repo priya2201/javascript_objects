@@ -1,0 +1,18 @@
+console.log(a);
+var a =10;
+{
+let a =100;
+}
+console.log(a);
+var b=20;
+{
+    let b=20;
+
+}
+// let  c=200;
+// {
+//     var c=202;
+
+// }
+
+
